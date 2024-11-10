@@ -1,5 +1,21 @@
 main {
     width: 1240px;
     margin: auto;
-    
+}
+
+.fiche {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__titrehost{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__tagrate{
+        display: flex;
+        justify-content: space-between;
+    }
 }

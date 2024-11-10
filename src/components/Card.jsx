@@ -1,6 +1,10 @@
 import "../styles/Card.scss";
 
+
 function Card({cover, title}) {
+
+    
+
     return (
         <div>
             <figure className="figure">
