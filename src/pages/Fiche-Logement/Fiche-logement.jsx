@@ -1,7 +1,18 @@
+import { useParams } from "react-router-dom"
+import "../../styles/Fiche-logement.scss"
+import propriete from "../../data/logements.json"
+import Carrousel from "../../components/Carrousel";
+
 function FicheLogement() {
+    const {logement} = useParams();
+    const proprieteChoisie = propriete.find((propriete) => propriete.title === logement)
+
     return (
         <div>
-            Fiche logement
+            <main>
+             <Carrousel
+             images= {proprieteChoisie.pictures} />
+             </main>
         </div>
     )
 }

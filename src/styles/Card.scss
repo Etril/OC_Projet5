@@ -1,0 +1,21 @@
+.figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .card__image {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+  }
+  .card__title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    color: white;
+  }
+}

@@ -1,0 +1,26 @@
+.banner {
+    position: relative;
+    margin-top: 50px;
+
+  &__image {
+    height: 223px;
+    width: 1240px;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(50%)
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+  }
+}
