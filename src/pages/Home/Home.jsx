@@ -1,8 +1,12 @@
+import "../../styles/Home.scss";
+
+
 function Home() {
   return (
-    <div>
-      Home
-    </div>
+      <div className="test">
+        <main>  Home 
+          </main>
+        </div>
   );
 }
 
