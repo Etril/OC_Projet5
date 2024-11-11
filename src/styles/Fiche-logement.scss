@@ -20,4 +20,10 @@ main {
         justify-content: space-between;
         align-items: center;
     }
+
+    &__menus {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
 }

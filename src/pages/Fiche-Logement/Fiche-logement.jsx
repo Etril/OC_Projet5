@@ -6,12 +6,18 @@ import Host from "../../components/Host";
 import Rate from "../../components/Rate";
 import TitreLogement from "../../components/TitreLogement";
 import Tags from "../../components/Tags";
+import Description from "../../components/Description";
+import Equipement from "../../components/Equipements";
+
+
 
 function FicheLogement() {
   const { logement } = useParams();
   const proprieteChoisie = propriete.find(
     (propriete) => propriete.title === logement
   );
+
+
 
   return (
     <div>
@@ -27,6 +33,10 @@ function FicheLogement() {
             <div className="fiche__tagrate">
                 <Tags tags={proprieteChoisie.tags}/>
                 <Rate note={proprieteChoisie.rating}/>
+            </div>
+            <div className="fiche__menus">
+              <Description description= {proprieteChoisie.description} />
+              <Equipement equipements= {proprieteChoisie.equipments} />
             </div>
         </section>
       </main>
