@@ -1,11 +1,10 @@
-import banner from "../assets/banner.png"
 import "../styles/Banner.scss"
 
-function Banner() {
+function Banner({image, text}) {
     return (
         <article className="banner">
-            <img src={banner} alt="Une plage rocailleuse" className="banner__image"></img>
-            <p className="banner__text"> Chez vous, partout et ailleurs </p>
+            <img src={image} alt="Un paysage" className="banner__image"></img>
+            <p className="banner__text"> {text} </p>
         </article>
     )
 }
