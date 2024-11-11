@@ -1,10 +1,16 @@
-function Host({nom, photo}) {
-    return (
-        <div className="host">
-            <p className="hostName"> {nom} </p>
-            <img src={photo} alt={`Photo de ${nom}`}></img>
-        </div>
-    )
+import "../styles/Host.scss";
+
+function Host({ nom, photo }) {
+  const noms = nom.split(" ");
+
+  return (
+    <div className="host">
+        <div className="host__container"> {noms.map((a) => (
+        <p className="host__name" id={a}> {a} </p>
+      ))} </div>
+      <img className="host__image" src={photo} alt={`Photo de ${nom}`}></img>
+    </div>
+  );
 }
 
-export default Host
+export default Host;

@@ -1,0 +1,25 @@
+.titre {
+  flex-direction: column;
+  gap: 0px;
+
+  &__logement {
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+    color: #ff6060;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__location {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}

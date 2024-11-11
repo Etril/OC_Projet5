@@ -1,3 +1,7 @@
+import active from "../assets/star-active.png";
+import inactive from "../assets/star-inactive.png";
+import "../styles/Rate.scss";
+
 function Rate({ note }) {
   const red = [];
   for (let i = 0; i < note; i++) {
@@ -12,11 +16,11 @@ function Rate({ note }) {
   return (
     <div className="rate">
       {red.map((red) => (
-        <div className="rate__star rate__star-red"> Red </div>
+        <div className="rate__star rate__star-red"> <img src={active} alt="Une étoile rouge"></img> </div>
       ))}
 
       {grey.map((grey) => (
-        <div className="rate__star rate__star--grey"> Grey </div>
+        <div className="rate__star rate__star--grey"> <img src={inactive} alt="Une étoile grise"></img> </div>
       ))}
     </div>
   );

@@ -1,3 +1,5 @@
+import ".//../styles/TitreLogement.scss"
+
 function TitreLogement({titre, lieu}) {
     return (
         <div className="titre">
