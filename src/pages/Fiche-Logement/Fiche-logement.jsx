@@ -8,6 +8,7 @@ import TitreLogement from "../../components/TitreLogement";
 import Tags from "../../components/Tags";
 import Description from "../../components/Description";
 import Equipement from "../../components/Equipements";
+import Erreur from "../Erreur/Erreur";
 
 
 
@@ -20,7 +21,9 @@ function FicheLogement() {
 
 
   return (
+     
     <div>
+      {proprieteChoisie ? 
       <main>
         <article>
           <Carrousel images={proprieteChoisie.pictures} />
@@ -40,6 +43,7 @@ function FicheLogement() {
             </div>
         </section>
       </main>
+      : <Erreur />}
     </div>
   );
 }
