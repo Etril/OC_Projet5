@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .host {
   display: flex;
@@ -16,7 +16,7 @@
     font-weight: 500;
     line-height: 25.67px;
     text-align: right;
-    color: $main-color ; 
+    color: $main-color;
     margin: 0;
   }
 
@@ -25,5 +25,23 @@
     height: 64px;
     border-radius: 50px;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .host {
+    &__name {
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17.11px;
+      text-align: right;
+    }
+
+    &__image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+    }
   }
 }

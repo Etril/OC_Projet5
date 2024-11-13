@@ -14,7 +14,7 @@
     box-sizing: border-box;
     padding-right: 10px;
     height: 52px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: $main-color;
 
     button {
@@ -34,9 +34,8 @@
     }
     .show {
       transform: rotate(90deg);
-      transition: transform 0.3s ;
+      transition: transform 0.3s;
     }
-
   }
 
   &__title {
@@ -55,13 +54,11 @@
     background-color: $background-color;
 
     &--hide {
-      
       max-height: 0;
       transition: max-height 0.3s ease;
     }
 
     &--show {
-     
       max-height: 200px;
       transition: max-height 0.3s ease;
     }
@@ -72,5 +69,25 @@
     font-weight: 400;
     line-height: 25.67px;
     text-align: left;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .collapse {
+    &__title {
+      font-family: $main-font;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 18.54px;
+      text-align: left;
+    }
+
+    &__contenu {
+      font-family: $main-font;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17.11px;
+      text-align: left;
+    }
   }
 }

@@ -14,10 +14,20 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    font-family: Montserrat, sans-serif;
+    font-family: $main-font;
     font-size: 18px;
     font-weight: 700;
     line-height: 25.67px;
     color: white;
   }
+}
+
+@media (max-width: 767.98px ) {
+
+  .figure {
+    
+  .card__image {
+    width: 100%;
+  }
+}
 }

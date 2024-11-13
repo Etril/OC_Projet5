@@ -16,7 +16,7 @@ function Carrousel({ images }) {
 
   return (
     <div>
-      <section className="carrousel">
+      <div className="carrousel">
       <img
           src={images[index]}
           alt={`Image n°${index}`}
@@ -26,7 +26,7 @@ function Carrousel({ images }) {
         {images.length === 1 ? null : <button onClick={prevSlide} className="carrousel__btn carrousel__btn--precedent"> <img src= {precedent} alt="bouton precedent"></img></button>}
         {images.length === 1 ? null : <p className="carrousel__counter">{index+1}/{images.length}</p>}
 
-      </section>
+      </div>
     </div>
   );
 }

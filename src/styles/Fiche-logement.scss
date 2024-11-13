@@ -1,46 +1,139 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 main {
-    width: 1240px;
-    margin: auto;
+  width: 1240px;
+  margin: auto;
 }
 
 .fiche {
+  display: grid;
+  grid-template-columns: 610px auto;
+  grid-template-rows: auto auto auto;
+  row-gap: 30px;
+  column-gap: 38px;
+  margin-bottom: 20px;
+
+  .titre {
+    justify-self: left;
+    align-self: start;
+
+    &__logement {
+      width: 1024px;
+    }
+  }
+
+  .host {
+    justify-self: right;
+    align-self: auto;
+  }
+
+  .tags {
+    order: 2;
+    align-self: center;
+  }
+
+  .rate {
+    order: 2;
+    justify-self: right;
+    align-self: center;
+  }
+
+  .collapse {
+    order: 3;
+  }
+
+  &__equipement {
+    order: 3;
+    justify-self: end;
+  }
+
+  &__menus {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 
-    &__titrehost{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
+  .collapse {
+    width: 582px;
+
+    &__menu {
+      width: inherit;
     }
 
-    &__tagrate{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  main {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .fiche {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 20px;
+
+
+    .titre {
+      &__logement {
+        width: 100%;
+        order: 1;
+      }
+
+      &__location {
+        order: 2;
+      }
     }
 
-    &__menus {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
+    .tags {
+        order: 3;
     }
+
+    .host {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .rate {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: start;
+        align-self: center;
+    }
+
+    &__equipement {
+        order: 5;
+        width: 100%;
+      }
 
     .collapse {
-        width: 582px;
+        width: 100%;
+        order: 5;
+        margin-bottom: 0;
     
         &__menu {
-            width: inherit;
+          width: inherit;
+          height: 30px;
         }
     
         &__list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+          list-style: none;
+          margin: 0;
+          padding: 0;
         }
-    }
-}
+    
+      }
+  }
 
+
+
+}

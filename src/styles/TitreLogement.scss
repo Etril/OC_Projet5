@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .titre {
   flex-direction: column;
@@ -6,12 +6,11 @@
   font-family: $main-font;
 
   &__logement {
-    
     font-size: 36px;
     font-weight: 500;
     line-height: 51.34px;
     text-align: left;
-    color:  $main-color;
+    color: $main-color;
     margin: 0;
     padding: 0;
   }
@@ -23,5 +22,25 @@
     text-align: left;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .titre {
+    &__logement {
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      text-align: left;
+    }
+
+    &__location {
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.96px;
+      text-align: left;
+    }
   }
 }

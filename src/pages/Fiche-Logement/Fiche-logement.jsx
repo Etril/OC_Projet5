@@ -29,22 +29,22 @@ function FicheLogement() {
     <div>
       {proprieteChoisie ? 
       <main>
-        <article>
+        <div>
           <Carrousel images={proprieteChoisie.pictures} />
-        </article>
+        </div>
         <section className="fiche">
-            <div className="fiche__titrehost">
             <TitreLogement titre={proprieteChoisie.title} lieu= {proprieteChoisie.location} />
             <Host nom={(proprieteChoisie.host).name} photo={(proprieteChoisie.host).picture}/>
-            </div>
-            <div className="fiche__tagrate">
+            
                 <Tags tags={proprieteChoisie.tags}/>
                 <Rate note={proprieteChoisie.rating}/>
-            </div>
-            <div className="fiche__menus">
+            
+          
               <Collapse titre= "Description" texte={proprieteChoisie.description} />
+              <div className="fiche__equipement">
               <Collapse titre= "Equipement" texte={listeEquipements} />
-            </div>
+              </div>
+           
         </section>
       </main>
       : navigate ("*")}

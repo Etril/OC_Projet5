@@ -1,18 +1,44 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  img {
+    filter: none;
+  }
 
-    &__menus {
-        margin-top: 50px;
+  &__menus {
+    margin-top: 50px;
 
-        .collapse{
-            width: 1023px;
-        }
+    .collapse {
+      width: 1023px;
+    }
+  }
+}
 
+@media (max-width: 767.98px) {
+  .about {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    .banner img {
+       filter:brightness(70%)
     }
 
+    &__menus {
+      margin-top: 30px;
+
+      .collapse {
+        width: 100%;
+
+        &__menu {
+            height: 30px;
+        }
+      }
+    }
+  }
 }
