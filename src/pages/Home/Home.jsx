@@ -9,8 +9,8 @@ function Home() {
   const text = "Chez vous, partout et ailleurs";
 
   return (
-    <div className="home">
-      <main>
+    
+      <main className="home">
         <Banner text={text} image={image} />
         <section className="home__cards-container">
           {proprietes.map(({ id, title, cover }) => (
@@ -22,7 +22,7 @@ function Home() {
           ))}
         </section>
       </main>
-    </div>
+  
   );
 }
 

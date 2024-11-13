@@ -1,14 +1,10 @@
 @import './variables.scss';
 
-main {
-    width: 1240px;
-    margin: auto;
-    
-}
-
 .home {
     display: flex;
     flex-direction: column;
+    width: 1240px;
+    margin: auto;
     
     &__cards-container {
         display: flex;
@@ -21,4 +17,17 @@ main {
         margin-bottom: 50px;
         padding: 50px 50px 50px 60px;
     }
+}
+
+@media (max-width: 425px) {
+
+   .home {
+        width: 100%;
+        margin:auto;
+    }
+
+    
+
+
+
 }
