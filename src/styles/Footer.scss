@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 footer {
     background-color: black;
     display: flex;
@@ -17,7 +19,7 @@ footer {
         color: white;
         font-size:24px;
         font-weight: 500;
-        font-family: "Montserrat", sans-serif;
+        font-family: $main-font;
         line-height: 34.22px;
     }
 }

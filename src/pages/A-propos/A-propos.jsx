@@ -13,7 +13,7 @@ function APropos() {
         <section className="about__menus">
             {infos.map(({id, valeur, texte })=>
             <div key={id}>
-                <Collapse valeur={valeur} texte={texte} />
+                <Collapse titre={valeur} texte={texte} />
             </div>)}
         </section>
     </main> 

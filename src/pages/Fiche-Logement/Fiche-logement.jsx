@@ -6,8 +6,7 @@ import Host from "../../components/Host";
 import Rate from "../../components/Rate";
 import TitreLogement from "../../components/TitreLogement";
 import Tags from "../../components/Tags";
-import Description from "../../components/Description";
-import Equipement from "../../components/Equipements";
+import Collapse from "../../components/Collapse";
 import Erreur from "../Erreur/Erreur";
 
 
@@ -17,6 +16,9 @@ function FicheLogement() {
   const proprieteChoisie = propriete.find(
     (propriete) => propriete.title === logement
   );
+  const listeEquipements= <ul className="collapse__list">{(proprieteChoisie.equipments).map((a) => (
+    <li> {a} </li>
+  ))}</ul>
 
 
 
@@ -38,8 +40,8 @@ function FicheLogement() {
                 <Rate note={proprieteChoisie.rating}/>
             </div>
             <div className="fiche__menus">
-              <Description description= {proprieteChoisie.description} />
-              <Equipement equipements= {proprieteChoisie.equipments} />
+              <Collapse titre= "Description" texte={proprieteChoisie.description} />
+              <Collapse titre= "Equipement" texte={listeEquipements} />
             </div>
         </section>
       </main>

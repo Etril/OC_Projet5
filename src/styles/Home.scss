@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 main {
     width: 1240px;
     margin: auto;
@@ -13,7 +15,7 @@ main {
         justify-content: flex-start;
         gap: 50px;
         flex-wrap: wrap;
-        background-color:#F6F6F6;
+        background-color: $background-color;
         border-radius: 25px;
         margin-top: 50px;
         margin-bottom: 50px;

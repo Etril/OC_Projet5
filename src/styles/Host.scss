@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .host {
   display: flex;
   align-items: center;
@@ -9,12 +11,12 @@
   }
 
   &__name {
-    font-family: Montserrat, sans-serif;
+    font-family: $main-font;
     font-size: 18px;
     font-weight: 500;
     line-height: 25.67px;
     text-align: right;
-    color: #FF6060;
+    color: $main-color ; 
     margin: 0;
   }
 
