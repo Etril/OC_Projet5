@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../../styles/Fiche-logement.scss";
 import propriete from "../../data/logements.json";
 import Carrousel from "../../components/Carrousel";
@@ -7,12 +8,13 @@ import Rate from "../../components/Rate";
 import TitreLogement from "../../components/TitreLogement";
 import Tags from "../../components/Tags";
 import Collapse from "../../components/Collapse";
-import Erreur from "../Erreur/Erreur";
+
 
 
 
 function FicheLogement() {
   const { logement } = useParams();
+  const navigate =useNavigate();
   const proprieteChoisie = propriete.find(
     (propriete) => propriete.title === logement
   );
@@ -45,7 +47,7 @@ function FicheLogement() {
             </div>
         </section>
       </main>
-      : <Erreur />}
+      : navigate ("*")}
     </div>
   );
 }
