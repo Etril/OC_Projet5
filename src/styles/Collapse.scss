@@ -20,13 +20,14 @@
       button {
           background-color: rgba(0, 0, 0, 0);
           border: none;
+
       }
   
       img {
         width: 32px;
         height: 32px;
         width: 32px;
-        rotate: 270deg;
+        transform: rotate(270deg);
       }
     }
   

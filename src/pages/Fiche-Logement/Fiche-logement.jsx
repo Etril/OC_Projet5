@@ -16,9 +16,9 @@ function FicheLogement() {
   const proprieteChoisie = propriete.find(
     (propriete) => propriete.title === logement
   );
-  const listeEquipements= <ul className="collapse__list">{(proprieteChoisie.equipments).map((a) => (
-    <li> {a} </li>
-  ))}</ul>
+  const listeEquipements= proprieteChoisie ? <ul className="collapse__list">{(proprieteChoisie.equipments).map((a) => (
+    <li key={a}> {a} </li>
+  ))}</ul> : null;
 
 
 

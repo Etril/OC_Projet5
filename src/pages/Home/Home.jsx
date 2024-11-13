@@ -14,11 +14,11 @@ function Home() {
         <Banner text={text} image={image} />
         <section className="home__cards-container">
           {proprietes.map(({ id, title, cover }) => (
-            <Link to={`/fiche-logement/${title}`}>
-              <div key={id}>
+            <div key={id}>
+              <Link to={`/fiche-logement/${title}`}>
                 <Card title={title} cover={cover} />
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </section>
       </main>

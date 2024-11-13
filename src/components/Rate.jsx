@@ -15,12 +15,12 @@ function Rate({ note }) {
 
   return (
     <div className="rate">
-      {red.map((red) => (
-        <div className="rate__star rate__star-red"> <img src={active} alt="Une étoile rouge"></img> </div>
+      {red.map((red, index) => (
+        <div className="rate__star rate__star-red" key={`${red}-${index}`}> <img src={active} alt="Une étoile rouge"></img> </div>
       ))}
 
-      {grey.map((grey) => (
-        <div className="rate__star rate__star--grey"> <img src={inactive} alt="Une étoile grise"></img> </div>
+      {grey.map((grey, index) => (
+        <div className="rate__star rate__star--grey" key={`${grey}-${index}`}> <img src={inactive} alt="Une étoile grise"></img> </div>
       ))}
     </div>
   );

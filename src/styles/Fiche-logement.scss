@@ -28,18 +28,19 @@ main {
         justify-content: space-between;
         margin-top: 20px;
     }
+
+    .collapse {
+        width: 582px;
+    
+        &__menu {
+            width: inherit;
+        }
+    
+        &__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
-.collapse {
-    width: 582px;
-
-    &__menu {
-        width: inherit;
-    }
-
-    &__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-}
