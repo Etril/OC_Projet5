@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "../../styles/Fiche-logement.scss";
 import propriete from "../../data/logements.json";
 import Carrousel from "../../components/Carrousel";
@@ -14,9 +14,9 @@ import Collapse from "../../components/Collapse";
 
 function FicheLogement() {
   const { logement } = useParams();
-  const navigate =useNavigate();
+ 
   const proprieteChoisie = propriete.find(
-    (propriete) => propriete.title === logement
+    (propriete) => propriete.id === logement
   );
   const listeEquipements= proprieteChoisie ? <div> <ul className="collapse__list">{(proprieteChoisie.equipments).map((a) => (
     <li key={a}> {a} </li>
@@ -47,7 +47,7 @@ function FicheLogement() {
            
         </section>
       </main>
-      : navigate ("*")}
+      : <Navigate to="/erreur404" replace />}
     </div>
   );
 }

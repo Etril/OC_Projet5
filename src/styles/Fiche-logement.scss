@@ -80,12 +80,13 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    row-gap: 20px;
+    row-gap: 10px;
 
 
     .titre {
       &__logement {
         width: 100%;
+        margin-bottom: 10px;
         order: 1;
       }
 
@@ -101,6 +102,7 @@ main {
     .host {
         grid-column-start: 1;
         grid-row-start: 3;
+        align-self: center;
     }
 
     .rate {

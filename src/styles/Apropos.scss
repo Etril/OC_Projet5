@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
 
-  img {
-    filter: none;
-  }
+  .banner img {
+    filter:brightness(70%)
+ }
 
   &__menus {
     margin-top: 50px;
@@ -25,12 +25,10 @@
     padding-right: 20px;
     box-sizing: border-box;
 
-    .banner img {
-       filter:brightness(70%)
-    }
 
     &__menus {
       margin-top: 30px;
+      margin-bottom: 100px;
 
       .collapse {
         width: 100%;
