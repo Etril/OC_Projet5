@@ -31,11 +31,10 @@
 @media (max-width: 767.98px) {
   .host {
     &__name {
-      font-family: $main-font;
+      
       font-size: 12px;
       font-weight: 500;
       line-height: 17.11px;
-      text-align: right;
     }
 
     &__image {

@@ -12,7 +12,7 @@ function Collapse({titre, texte}) {
     return (
         <div className="collapse">
             <div className="collapse__menu">
-                <p className="collapse__title"> {titre} </p>
+                <h3 className="collapse__title"> {titre} </h3>
                 <button onClick={handleClick}> <img src={fleche} alt="Une fleche vers le bas" className={active ? "show" : "hide"}></img> </button>
             </div> 
             <div className={`collapse__conteneur collapse__conteneur--${active ? "show" : "hide"}`} >

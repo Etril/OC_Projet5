@@ -5,8 +5,8 @@ function Erreur() {
     return (
         <main className="erreur"> 
             <article> 
-                <p className="erreur__number"> 404 </p>
-                <p className="erreur__text"> Oups! La page que vous demandez n'existe pas. </p>
+                <h1 className="erreur__number"> 404 </h1>
+                <h2 className="erreur__text"> Oups! La page que vous demandez n'existe pas. </h2>
             <Link to="/" className="erreur__lien"> Retourner sur la page d'accueil </Link>
             </article>
         </main>

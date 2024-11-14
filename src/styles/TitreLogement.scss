@@ -28,19 +28,15 @@
 @media (max-width: 767.98px) {
   .titre {
     &__logement {
-      font-family: $main-font;
       font-size: 18px;
       font-weight: 500;
       line-height: 25.67px;
-      text-align: left;
     }
 
     &__location {
-      font-family: $main-font;
       font-size: 14px;
       font-weight: 500;
       line-height: 19.96px;
-      text-align: left;
     }
   }
 }

@@ -11,7 +11,7 @@ function Home() {
   return (
     <main className="home">
       <Banner text={text} image={image} />
-      <section className="home__cards-container">
+      <div className="home__cards-container">
         {proprietes.map(({ id, title, cover }) => (
           <div key={id}>
             <Link to={`/fiche-logement/${id}`}>
@@ -19,7 +19,7 @@ function Home() {
             </Link>
           </div>
         ))}
-      </section>
+      </div>
     </main>
   );
 }
