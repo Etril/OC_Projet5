@@ -19,7 +19,7 @@ function Carrousel({ images }) {
       <div className="carrousel">
       <img
           src={images[index]}
-          alt={`Image n°${index}`}
+          alt={`n°${index}`}
           className="carrousel__image"
         ></img>
         {images.length === 1 ? null : <button onClick={nextSlide} className="carrousel__btn carrousel__btn--suivant"> <img src={suivant} alt="bouton suivant"></img></button>}

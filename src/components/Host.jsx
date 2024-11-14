@@ -9,7 +9,7 @@ function Host({ nom, photo }) {
         <div className="host__container"> {noms.map((a) => (
         <p className="host__name" key={a}> {a} </p>
       ))} </div>
-      <img className="host__image" src={photo} alt={`Photo de ${nom}`}></img>
+      <img className="host__image" src={photo} alt={`de ${nom}`}></img>
     </div>
   );
 }
