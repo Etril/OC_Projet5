@@ -9,11 +9,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +25,7 @@ root.render(
         <Route path="*" element={<Erreur />} />
         <Route path="/about" element={<APropos />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
